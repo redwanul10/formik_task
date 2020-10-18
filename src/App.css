@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background: #232530;
 }
+.form_area {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  padding: 50px 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.form_area label,.form_header {
   color: white;
+  font-weight: bold;
+}
+.button {
+  background: #ffbc00;
+  border: none;
+  color: white;
+  padding: 9px 32px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.btn_bg_2{
+  background: rebeccapurple;
+}
+.form_area .button {
+  margin-right: 12px;
+}
+.table{
+  color:white  !important
+}
+.smallBTN{
+  padding: 1px 18px;
+  font-weight: normal;
+  font-size: 13px;
+}
+.table .button {
+  margin-left: 6px;
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width:768px){
+  .scroll-x {
+    overflow-x: scroll;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Hide Input Arrows*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }

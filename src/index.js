@@ -3,10 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { Provider } from 'react-redux'
+import store from './redux/store'
+import { ToastProvider } from 'react-toast-notifications'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <ToastProvider autoDismiss={true}>
+        <App />
+      </ToastProvider>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
