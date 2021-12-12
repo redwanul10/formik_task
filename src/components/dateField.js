@@ -5,11 +5,6 @@ import "react-datepicker/dist/react-datepicker.css";
 
 const DateField = (props) => {
 
-    console.log(props)
-
-    const [startDate, setStartDate] = useState(new Date());
-    // const [field, meta] = useField(props);
-
     const handleChange = date => {
         props.handleChange('birth', date)
     }
